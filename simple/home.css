@@ -1,0 +1,46 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body 
+{
+    height:100%;
+    width:100%;
+    font-size:16px;
+}
+
+body 
+{
+    background:linear-gradient(to right, #92e970, #3fce07);
+    display:flex;
+    justify-content:center;
+}
+
+.box 
+{
+    height:45%;
+    width:30%;
+    background-color:#184e03;
+    border:2px solid #ffffff;
+    margin-top:2rem;
+    padding:2rem;
+}
+
+.btn 
+{
+    height:2rem;
+    width:4rem;
+    background:blue;
+    color:#ffffff;
+    margin:1rem 3rem;
+}
+
+.tbl 
+{
+    margin-left:4rem;
+}
+
+
