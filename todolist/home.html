@@ -77,6 +77,11 @@
             background:royalblue;
             top:20rem;   
         }
+
+        .contentbox para 
+        {
+            position:absolute;
+        }
     
     </style>
     <title>Todo-list</title>
@@ -95,15 +100,17 @@
 </body>
 <script>
     let btn = document.querySelector('.btn');
+    let txt = document.getElementById('txt');
+    const content = document.querySelector('.contentbox');
     btn.addEventListener('click', function(){
-        let txt = document.getElementById('txt');
-        const content = document.querySelector('.contentbox');
-
+        console.log(txt);
+        console.log(content);
         let paragraph = document.createElement('p');
-        console.log(paragraph);1
-
+        paragraph.className = 'para';
+        console.log(paragraph);
         paragraph.innerText = txt.value;
         content.appendChild(paragraph);
+        txt.value = "";
     })
 </script>
 </html>
