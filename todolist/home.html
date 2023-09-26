@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        ::root 
+        {
+            font-size:16px;
+        }
+        html, body {
+            height:100%;
+            width:100%;
+        }
+        body 
+        {
+            display:flex;
+            justify-content:center;
+        }
+        .inputbox
+        {
+            height:30%;
+            width: 40%;
+            background:royalblue;
+            margin-top:5rem;
+        }
+
+        .head 
+        {
+            height:15%;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#000000;
+            color:#ffffff;
+        }
+
+        .form 
+        {
+            position:relative;
+            display:flex;
+            justify-content:center;
+        }
+
+        #txt 
+        {
+            height:2rem;
+            width:18rem;
+            background:royalblue;
+            border:2px solid #000000;
+            margin-top:1rem;
+        }
+
+        .btn 
+        {
+            height:2rem;
+            width:6rem;
+            background:crimson;
+            color:#ffffff;
+            position:absolute;
+            top:5rem;
+            left:13rem
+        }
+
+        .contentbox
+        {
+            height:50%;
+            width: 40%;
+            position:absolute;
+            background:royalblue;
+            top:20rem;   
+        }
+    
+    </style>
+    <title>Todo-list</title>
+</head>
+<body>
+    <div class="inputbox">
+        <div class="head"><h3>Todo List</h3></div>
+        <form class="form">
+            <input type="text" id="txt">
+            <button class="btn">Add Todo</button>
+        </form>
+    </div>
+
+    <div class="contentbox"></div>
+    
+</body>
+<script>
+    let btn = document.querySelector('.btn');
+    btn.addEventListener('click', function(){
+        let txt = document.getElementById('txt');
+        const content = document.querySelector('.contentbox');
+
+        let paragraph = document.createElement('p');
+        console.log(paragraph);1
+
+        paragraph.innerText = txt.value;
+        content.appendChild(paragraph);
+    })
+</script>
+</html>
