@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    color:#fff;
 }
 
 html, body 
@@ -16,25 +15,25 @@ html, body
 {
     height:100%;
     width:100%;
-    background:#111;
-    position:relative;
+    background-color:#111;
+    position:absolute;
+    color:#ffffff;
 }
 
 .elem 
 {
     height:80px;
     width:100%;
-    /* background:red; */
-    border-bottom:2px solid #ffffff;
+    border-bottom:2px solid #fff;
     display:flex;
     align-items:center;
     justify-content:flex-start;
     position:relative;
 }
 
-.elem h1 
+.elem h2 
 {
-    font-size:3vw;
+    font-size:4vw;
     position:relative;
     z-index:9;
     mix-blend-mode: difference;
@@ -42,13 +41,12 @@ html, body
 
 .elem img 
 {
-    height:50px;
+    height:80px;
     width:80px;
     object-fit:cover;
     object-position:center;
     border-radius:50%;
     position:absolute;
-    /* transform:translate(-50%, -50%); */
+    transform:translate(-50%, -50%);
     opacity:0;
-    transition: all linear 0.3s;
 }
